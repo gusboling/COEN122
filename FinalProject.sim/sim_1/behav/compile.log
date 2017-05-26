@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/memwb_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/idex_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/exmem_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/ifid_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sim_1/new/buffer_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buffer_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
