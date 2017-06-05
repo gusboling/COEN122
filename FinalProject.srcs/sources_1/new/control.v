@@ -25,13 +25,11 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
     output reg [3:0] ALUOp;
     output reg RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt;
     
-    assign OPCODE = instruction[31:28];
-    
     always @ instruction
     begin
-    
+   
         //LOAD PC
-        if (OPCODE == 4'b1111)
+        if (instruction[31:28] == 4'b1111)
         begin
             RegWrt = 1;
             MemtoReg = 1;
@@ -42,7 +40,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
         end
         
         //LOAD
-        else if (OPCODE == 4'b1110)
+        else if (instruction[31:28] == 4'b1110)
         begin
             RegWrt = 1;
             MemtoReg = 1;
@@ -53,7 +51,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
         end
         
         //STORE
-        else if (OPCODE == 4'b0011)
+        else if (instruction[31:28] == 4'b0011)
         begin
             RegWrt = 0;
             MemtoReg = 1;
@@ -64,7 +62,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
         end
         
         //ADD
-        else if (OPCODE == 4'b0100)
+        else if (instruction[31:28] == 4'b0100)
         begin
            RegWrt = 1;
            MemtoReg = 0;
@@ -75,27 +73,27 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
         end
         
         //INCREMENT
-        else if (OPCODE == 4'b0101)
+        else if (instruction[31:28] == 4'b0101)
         begin
-              RegWrt = 1;
-                  MemtoReg = 0;
-                  PCtoReg = 0;
-                  MemRead = 0;
-                  MemWrt = 1;
-                  ALUOp = 3'b010; 
+          RegWrt = 1;
+          MemtoReg = 0;
+          PCtoReg = 0;
+          MemRead = 0;
+          MemWrt = 1;
+          ALUOp = 3'b010; 
         end
         //NEGATE       
-        else if (OPCODE == 4'b0110)
-             begin
-                   RegWrt = 1;
-                       MemtoReg = 0;
-                       PCtoReg = 0;
-                       MemRead = 0;
-                       MemWrt = 1;
-                       ALUOp = 3'b001; 
-               end
+        else if (instruction[31:28] == 4'b0110)
+         begin
+               RegWrt = 1;
+                   MemtoReg = 0;
+                   PCtoReg = 0;
+                   MemRead = 0;
+                   MemWrt = 1;
+                   ALUOp = 3'b001; 
+           end
        //SUBTRACT        
-        else if (OPCODE == 4'b0111)
+        else if (instruction[31:28] == 4'b0111)
              begin
                   RegWrt = 1;
                        MemtoReg = 0;
@@ -106,7 +104,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                end
                
        //JUMP
-        else if (OPCODE == 4'b1000)
+        else if (instruction[31:28] == 4'b1000)
              begin
                   RegWrt = 0;
                   MemtoReg = 0;
@@ -117,7 +115,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                end
                
         //BRANCH IF ZERO
-        else if (OPCODE == 4'b1001)
+        else if (instruction[31:28] == 4'b1001)
              begin
                       RegWrt = 0;
                       MemtoReg = 0;
@@ -128,7 +126,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                    end
                    
          //JUMP MEMORY      
-        else if (OPCODE == 4'b1010)
+        else if (instruction[31:28] == 4'b1010)
             begin
                   RegWrt = 0;
                   MemtoReg = 0;
@@ -139,7 +137,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                end
                
          //BRANCH IF NEGATIVE
-        else if (OPCODE == 4'b1011)
+        else if (instruction[31:28] == 4'b1011)
              begin
                   RegWrt = 0;
                   MemtoReg = 0;
@@ -149,7 +147,7 @@ module control(instruction, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                   ALUOp = 3'b011; 
                end
         //SUM
-        else if (OPCODE == 4'b0001)
+        else if (instruction[31:28] == 4'b0001)
              begin
                    RegWrt = 1;
                        MemtoReg = 0;
