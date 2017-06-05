@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu May 25 21:35:29 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="84a1d7de110f476db645404161d0c024" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="CloseProject" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="2" type="GuiResourceData"/>
+<property name="NEXT, Next " value="8" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, adder" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, testbench" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_NEW_PROJECT, New Project..." value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, adder.v], 2, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Non-module Files, adder.v], 2, false, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, testbench (testbench.v" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources], 0, true, false, false, false, false, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, Adder_SE" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="2" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="4" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 1*" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_COPY, Copy" value="3" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_PASTE, Paste" value="1" type="GuiResourceData"/>
+<property name="adder.v, 115, 99" value="1" type="GuiResourceData"/>
+<property name="adder.v, 115, 99, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="adder.v, 162, 409" value="1" type="GuiResourceData"/>
+<property name="adder.v, 163, 229" value="1" type="GuiResourceData"/>
+<property name="adder.v, 163, 403" value="1" type="GuiResourceData"/>
+<property name="adder.v, 166, 582" value="1" type="GuiResourceData"/>
+<property name="adder.v, 184, 401" value="1" type="GuiResourceData"/>
+<property name="adder.v, 208, 555" value="1" type="GuiResourceData"/>
+<property name="adder.v, 268, 391" value="1" type="GuiResourceData"/>
+<property name="adder.v, 57, 71, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="adder.v, 82, 569" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 119, 268" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 131, 487" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 132, 287" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 5, 381, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 71, 337, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 73, 730" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 89, 444" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="20" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="17" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>

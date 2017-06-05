@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Fri Jun 02 14:03:06 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="7fce304a9ad94ec39ba6406a4a303a67" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="CloseProject" value="3" type="JavaHandler"/>
+<property name="NewProject" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="5" type="JavaHandler"/>
+<property name="RunImplementation" value="1" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
+<property name="SimulationRun" value="4" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="1" type="GuiResourceData"/>
+<property name="OR.v, 104, 383" value="1" type="GuiResourceData"/>
+<property name="OR.v, 105, 455" value="1" type="GuiResourceData"/>
+<property name="OR.v, 131, 515" value="1" type="GuiResourceData"/>
+<property name="OR.v, 145, 383" value="1" type="GuiResourceData"/>
+<property name="OR.v, 167, 380" value="1" type="GuiResourceData"/>
+<property name="OR.v, 183, 385" value="1" type="GuiResourceData"/>
+<property name="OR.v, 47, 420" value="1" type="GuiResourceData"/>
+<property name="OR.v, 70, 384, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="OR.v, 77, 383" value="1" type="GuiResourceData"/>
+<property name="OR.v, 81, 388" value="1" type="GuiResourceData"/>
+<property name="OR.v, 90, 526" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, testbench" value="1" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_ADD_SOURCES, Add Sources..." value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, OR (OR.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, testbench (testbench.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, C:/Users/skakkar1/cpu_pipeline/sign_extension/sign_extension.xpr" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="2" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_COPY, Copy" value="3" type="GuiResourceData"/>
+<property name="signextend.v, 172, 459" value="1" type="GuiResourceData"/>
+<property name="signextend.v, 232, 383" value="1" type="GuiResourceData"/>
+<property name="signextend.v, 55, 381, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 62, 290, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="testbench.v, 83, 689" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="25" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="22" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
