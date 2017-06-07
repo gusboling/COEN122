@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/dcengr/My Documents/COEN_122/Lab1/Lab3/Lab3.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/dcengr/My Documents/COEN_122/Lab1/Lab3/Lab3.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/dcengr/My Documents/COEN_122/Lab1/Lab3/Lab3.srcs/sources_1/new/RegisterMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/dcengr/My Documents/COEN_122/Lab1/Lab3/Lab3.srcs/sources_1/new/Entire_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Entire_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "Z:/dcengr/My Documents/COEN_122/Lab1/Lab3/Lab3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
