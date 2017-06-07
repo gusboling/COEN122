@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module register(rs,rt,rd,dataIn,write,clk,rsOut,rtOut);
+module register(rs,rt,rd,dataIn,write,write_address,clk,rsOut,rtOut);
 
 input [5:0]rs;
 input [5:0]rt;
@@ -28,6 +28,7 @@ input [5:0]rd;
 input write;
 input clk;
 input [31:0]dataIn;
+input [31:0] write_address;
 
 output reg[31:0]rsOut;
 output reg[31:0]rtOut;

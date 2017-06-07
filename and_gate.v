@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/25/2017 09:40:59 PM
+// Create Date: 05/25/2017 09:54:43 PM
 // Design Name: 
-// Module Name: signextend
+// Module Name: and_gate
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module signextend(in, clk, se_out);
-input signed [20:0] in;
-input clk;
-output signed [31:0] se_out;
+module and_gate(
+    input a,
+    input b,
+    output out
+    );
 
-    assign se_out =  {{11{in[20]}},in[20:0]};
+    assign out = a & b;
 
 endmodule

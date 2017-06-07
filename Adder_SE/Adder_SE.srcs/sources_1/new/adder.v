@@ -22,14 +22,13 @@
 
 module adder(
         input  [31:0] PC,
-        input  [31:0] SE,
+        input  [21:0] in,
         input clk,
-        
-        output reg [31:0] out
+        output reg [31:0] adder_out
 );
     
 always @(posedge clk) 
      begin
-        out = PC + SE;      
+        adder_out = PC + {{10{in[21]}},in[21:0]};      
      end
 endmodule
