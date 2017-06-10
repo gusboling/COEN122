@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/25/2017 09:43:12 PM
+// Create Date: 04/25/2016 01:42:05 PM
 // Design Name: 
-// Module Name: mux3to1
+// Module Name: register
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,26 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux3to1(clk, a_in, b_in, c_in, select, out);
-input [31:0] a_in;
-input [31:0] b_in;
-input [31:0] c_in;
-input [1:0] select;
-output reg [31:0] out;
-input clk;
+module register(rs,rt,rd,dataIn,write,clk,rsOut,rtOut);
 
-always@(a_in, b_in, c_in, select)
-case(select)
-    2'b00: out = a_in;
-    2'b01: out = b_in;
-    2'b10: out = c_in;
-    endcase
+input [5:0]rs;
+input [5:0]rt;
+input [5:0]rd;
+input write;
+input clk;
+input [31:0]dataIn;
+
+output reg[31:0]rsOut;
+output reg[31:0]rtOut;
+
+reg[31:0] block[63:0];
+
+always @(posedge clk) begin 
+    rsOut = block[rs];
+    rtOut = block[rt];
+    
+    if(write == 1)
+        block[rd] = dataIn;
+end
 
 endmodule
-

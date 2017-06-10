@@ -20,20 +20,36 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module section1(JUMP,  BRANCH, SELECT, CLOCK);
+module section1(JUMP, BRANCH, SELECT, CLOCK, PC_OUT, INST);
 
 input CLOCK;
 input [1:0] SELECT;
 input [31:0] JUMP, BRANCH;
 
+output reg [31:0] PC_OUT;
+output reg [31:0] INST;
+
 reg [31:0] PC = 0;
 
-mux3to1 PC_MUX(.a_in(PC), .b_in(JUMP), .c_in(BRANCH), .select(SELECT), .out(PC));
-adder PC_ADDER(.A(PC), .clk(CLOCK), .out(PC));
+wire [31:0] INST_BUS;
+wire [31:0] PC_BUS;
+wire [31:0] ADD_BUS;
+wire [31:0] BUFF_BUS_PC;
+wire [31:0] BUFF_BUS_INST;
 
-always @ (posedge CLOCK)
+mux3to1 PC_MUX(.clk(CLOCK), .a_in(ADD_BUS), .b_in(JUMP), .c_in(BRANCH), .select(SELECT), .out(PC_BUS));
+
+adder PC_ADDER(.A(PC_BUS), .clk(CLOCK), .out(ADD_BUS));
+
+InstructionMem INST_MEM(.address(PC_BUS), .clk(CLOCK), .instruction_out(INST_BUS));
+
+IF_ID buffer1(.clk(CLOCK), .PC4In(PC_BUS), .I_MemIn(INST_BUS), .PC4Out(BUFF_BUS_PC), .I_MemOut(BUFF_BUS_INST));
+
+always @ (PC_BUS)
 begin
-    
+    PC = PC_BUS;
+    PC_OUT = BUFF_BUS_PC;
+    INST = BUFF_BUS_INST;
 end
 
 endmodule

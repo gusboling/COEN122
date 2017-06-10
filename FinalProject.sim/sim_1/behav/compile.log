@@ -1,6 +1,14 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sim_1/new/buffer_testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/imports/cpu_pipeline/mux3to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/ifid_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/imports/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/imports/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/imports/new/section1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module section1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.srcs/sources_1/new/test_section1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_section1
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aboling/Vivado Projects/cpu_pipeline/FinalProject.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

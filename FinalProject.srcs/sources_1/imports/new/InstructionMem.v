@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 05/25/2017 09:43:12 PM
+// Create Date: 04/25/2016 02:13:34 PM
 // Design Name: 
-// Module Name: mux3to1
+// Module Name: InstructionMem
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,20 +20,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux3to1(clk, a_in, b_in, c_in, select, out);
-input [31:0] a_in;
-input [31:0] b_in;
-input [31:0] c_in;
-input [1:0] select;
-output reg [31:0] out;
-input clk;
+module InstructionMem(address,clk, instruction_out);
 
-always@(a_in, b_in, c_in, select)
-case(select)
-    2'b00: out = a_in;
-    2'b01: out = b_in;
-    2'b10: out = c_in;
-    endcase
+input clk;
+input [31:0] address;
+
+output reg[31:0] instruction_out;
+
+reg [31:0] block[255:0];
+initial begin
+    block[0] = 123;
+    block[5] = 15;
+    block[10] = 69;
+end
+
+always @(posedge clk) begin
+    instruction_out = block[address];
+end
 
 endmodule
-
