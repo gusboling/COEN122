@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 06/02/2017 01:57:07 PM
+// Create Date: 05/25/2017 09:54:43 PM
 // Design Name: 
-// Module Name: OR
+// Module Name: and_gate
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module OR(a, b, y, clk);
+module AND(
+    input a,
+    input b,
+    output out
+    );
 
-input [31:0] a;
-input [31:0] b;
-input clk;
-
-output [31:0] y;
-
-    assign y = a || b;
+    assign out = a & b;
 
 endmodule

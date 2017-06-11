@@ -2,3 +2,4 @@ INFO: Analyzing Verilog file "C:/Users/skakkar1/AppData/Local/Temp/VivadoEditorA
 INFO: analyzing module testbench (VERI-9002)
 INFO: Analyzing Verilog file "C:/Users/skakkar1/AppData/Local/Temp/VivadoEditorAssist7598938716448670346.tmp" into library work (VERI-1482)
 INFO: analyzing module ALU (VERI-9002)
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 07 16:39:05 2017...

@@ -32,10 +32,11 @@ output neg;
 output [31:0] ALU_Result;
 
 
-wire [3:0] opcode;
 wire [31:0] rsOut;
 wire [31:0] rtOut;
-wire [5:0] rd;
+
+assign rsOut = 25;
+assign rtOut = 50;
 
 ID_EX idex_buffer (.RD1_Out(rsOut), .RD2_Out(rtOut));
 DataMem DATAMEM(.clk(clk),.address(rsOut),.write(MemWrt),.data_in(rtOut));
