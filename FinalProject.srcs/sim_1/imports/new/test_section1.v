@@ -23,13 +23,15 @@
 module test_section1();
 
 reg [31:0] jump, branch;
-reg [1:0] select;
 reg clk;
+reg [1:0] select;
+wire [31:0] inst_bus;
 
-wire [31:0] pc_wire;
-wire [31:0] inst_wire;
+wire [31:0] PC;
+wire [31:0] INSTRUCTION;
 
-section1 S1(.JUMP(jump), .BRANCH(branch), .SELECT(select), .CLOCK(clk), .PC_OUT(pc_wire), .INST(inst_wire));
+
+section1 DUT(.JUMP(jump), .BRANCH(branch), .SELECT(select), .CLOCK(clk), .PC_OUT(PC), .INST(INSTRUCTION));
 
 initial begin
     clk = 0;
