@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module IF_ID (clk, PC4In, I_MemIn, PC4Out, I_MemOut);
+module IFIDBuffer (clk, PC4In, I_MemIn, PC4Out, I_MemOut);
 
 input clk;
 input [31:0] PC4In;

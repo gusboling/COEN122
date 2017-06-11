@@ -38,6 +38,6 @@ assign rd = instruction [15:10];
 
 control CONTROL (.OPCODE(opcode));
 register REGFILE (.rs(rs), .rt(rt), .rd(rd), .clk(clk));
-adder ADD_SE (.PC(PC), .in(in));
+Adder ADD_SE (.PC(PC), .in(in));
 
 endmodule

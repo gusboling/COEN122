@@ -20,15 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module adder(
-        input  [31:0] PC,
+module Adder(
+        input  [31:0] pc,
         input  [21:0] in,
         input clk,
-        output reg [31:0] adder_out
+        output reg [31:0] out
 );
     
 always @(posedge clk) 
      begin
-        adder_out = PC + {{10{in[21]}},in[21:0]};      
+        out = pc + {{10{in[21]}},in[21:0]};      
      end
 endmodule

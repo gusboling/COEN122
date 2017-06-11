@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux3to1(a_in, b_in, c_in, select, out);
+module Mux3to1(a_in, b_in, c_in, select, out);
 input [31:0] a_in;
 input [31:0] b_in;
 input [31:0] c_in;
