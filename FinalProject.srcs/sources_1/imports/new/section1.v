@@ -42,6 +42,8 @@ Mux3to1 PC_MUX(.a_in(ADD_BUS), .b_in(JUMP), .c_in(BRANCH), .select(SELECT), .out
 
 Adder PC_ADDER(.pc(PC_BUS), .in(1), .clk(CLOCK), .out(ADD_BUS));
 
+IFIDBuffer IFID_BUFF(.clk(CLOCK), .PC4In(PC_BUS), .I_MemIn(INST_BUS));
+
 /*
 InstructionMem INST_MEM(.address(PC_BUS), .clk(CLOCK), .instruction_out(INST_BUS));
 

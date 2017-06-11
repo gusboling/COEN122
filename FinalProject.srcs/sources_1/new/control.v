@@ -166,4 +166,6 @@ module control(OPCODE, ALUOp, RegWrt, MemtoReg, PCtoReg, MemRead, MemWrt);
                 ALUOp = 3'b000;
             end
    end
+   
+   ID_EX IDEX(.clk(clk), .RegWrt_In(RegWrt), .MemtoReg_In(MemtoReg), .PCToReg_In(PCToReg), .MemRead_In(MemRead), .MemWrt_In(MemWrt), .ALUOP_In(ALUOP));
 endmodule

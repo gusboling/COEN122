@@ -19,39 +19,42 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module ID_EX (clk, WB_In, MEM_In, EX_In, PC4_In, RD1_In, RD2_In, SE_In, _20_16_In, _15_11_In, WB_Out, MEM_Out, EX_Out, PC4_Out, RD1_Out, RD2_Out, SE_Out, _20_16_Out, _15_11_Out);
+module ID_EX (clk, RegWrt_In, MemtoReg_In, PCToReg_In, ALUOP_In, MemRead_In, MemWrt_In, rsOut_In, rtOut_In, rd_In, SE_In, RegWrt_Out, MemtoReg_Out, PCToReg_Out, ALUOP_Out, MemRead_Out, MemWrt_Out, rsOut_Out, rtOut_Out, rd_Out, SE_Out);
 
 input clk;
-input [1:0] WB_In;
-input [2:0] MEM_In;
-input [3:0] EX_In;
-input [31:0] PC4_In;
-input [31:0] RD1_In;
-input [31:0] RD2_In;
+input [1:0] RegWrt_In;
+input [2:0] MemtoReg_In;
+input [3:0] PCToReg_In;
+input [31:0] ALUOP_In;
+input [31:0] MemRead_In;
+input [31:0] MemWrt_In;
+input [31:0] rsOut_In;
+input [31:0] rtOut_In;
+input [31:0] rd_In;
 input [31:0] SE_In;
-input [4:0] _20_16_In;
-input [4:0] _15_11_In;
 
-output reg[1:0] WB_Out;
-output reg[2:0] MEM_Out;
-output reg[3:0] EX_Out;
-output reg[31:0] PC4_Out;
-output reg[31:0] RD1_Out;
-output reg[31:0] RD2_Out;
+output reg[1:0] RegWrt_Out;
+output reg[2:0] MemtoReg_Out;
+output reg[3:0] PCToReg_Out;
+output reg[31:0] ALUOP_Out;
+output reg[31:0] MemRead_Out;
+output reg[31:0] MemWrt_Out;
+output reg[31:0] rsOut_Out;
+output reg[31:0] rtOut_Out;
+output reg[31:0] rd_Out;
 output reg[31:0] SE_Out;
-output reg[4:0] _20_16_Out;
-output reg[4:0] _15_11_Out;
 
 always@(posedge clk) begin
-	WB_Out = WB_In;
-	MEM_Out = MEM_In;
-	EX_Out = EX_In;
-	PC4_Out = PC4_In;
-	RD1_Out = RD1_In;
-	RD2_Out = RD2_In;
+	RegWrt_Out = RegWrt_In;
+	MemtoReg_Out = MemtoReg_In;
+	PCToReg_Out = PCToReg_In;
+	ALUOP_Out = ALUOP_In;
+	MemRead_Out = MemRead_In;
+	MemWrt_Out = MemWrt_In;
+	rsOut_Out = rsOut_In;
+	rtOut_Out = rtOut_In;
+	rd_Out = rd_In;
 	SE_Out = SE_In;
-	_20_16_Out = _20_16_In;
-	_15_11_Out = _15_11_In;
 end
 
 endmodule
