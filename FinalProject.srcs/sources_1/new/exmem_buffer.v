@@ -20,33 +20,35 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module EX_MEM (clk, WB_In, MEM_In, Branch_In, Zero_In, ALU_In, RD2_In, Instr_In, WB_Out, MEM_Out, Branch_Out, Zero_Out, ALU_Out, RD2_Out, Instr_Out);
+module EX_MEM (clk, Neg_In, Zero_In, RegWrt_In, MemtoReg_In, PCtoReg_In, BrNeg_In, BrZ_In, Jump_In, JumpMem_In, ALU_In, Data_In, RD_In, Branch_In, Neg_Out, Zero_Out, RegWrt_Out, MemtoReg_Out, PCtoReg_Out, BrNeg_Out, BrZ_Out, Jump_Out, JumpMem_Out, ALU_Out, Data_Out, RD_Out, Branch_Out);
 
 input clk;
-input [1:0] WB_In;
-input [2:0] MEM_In;
-input [31:0] Branch_In;
-input Zero_In;
+input Neg_In, Zero_In, RegWrt_In, MemtoReg_In, PCtoReg_In, BrNeg_In, BrZ_In, Jump_In, JumpMem_In;
 input [31:0] ALU_In;
-input [31:0] RD2_In;
-input [4:0] Instr_In;
+input [31:0] Data_In;
+input [5:0] RD_In;
+input [31:0] Branch_In;
 
-output reg [1:0] WB_Out;
-output reg [2:0] MEM_Out;
-output reg [31:0] Branch_Out;
-output reg Zero_Out;
-output reg [31:0] ALU_Out;
-output reg [31:0] RD2_Out;
-output reg [4:0] Instr_Out;
+output Neg_Out, Zero_Out, RegWrt_Out, MemtoReg_Out, PCtoReg_Out, BrNeg_Out, BrZ_Out, Jump_Out, JumpMem_Out;
+output [31:0] ALU_Out;
+output [31:0] Data_Out;
+output [5:0] RD_Out;
+output [31:0] Branch_Out;
 
 always @(posedge clk) begin
-	WB_Out = WB_In;
-	MEM_Out = MEM_In;
-	Branch_Out = Branch_In;
-	Zero_Out = Zero_In;
-	ALU_Out = ALU_In;
-	RD2_Out = RD2_In;
-	Instr_Out = Instr_In;
+    Neg_Out = Neg_In;
+    Zero_Out = Zero_In;
+    RegWrt_Out = RegWrt_In;
+    MemtoReg_Out = MemtoReg_In;
+    PCtoReg_Out = PCtoReg_In;
+    BrNeg_Out = BrNeg_In;
+    BrZ_Out = BrZ_In;
+    Jump_Out = Jump_In;
+    JumpMem_Out = JumpMem_In;
+    ALU_Out = ALU_In;
+    Data_Out = Data_In;
+    RD_Out = RD_In;
+    Branch_Out = Branch_In;    
 end
 
 endmodule
